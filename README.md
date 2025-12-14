@@ -22,6 +22,7 @@ Proyecto-transacciones/
 └── README.md # Documentación del proyecto
 
 ▶️ Cómo ejecutar el proyecto
+
 1️⃣ Clonar el repositorio
 git clone https://github.com/GeraldyneRozo21/Proyecto-transacciones.git
 cd Proyecto-transacciones
