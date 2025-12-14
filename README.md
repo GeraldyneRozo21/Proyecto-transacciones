@@ -1,23 +1,54 @@
-# Proyecto-transacciones
+# Proyecto de Procesamiento de Transacciones
 Canalización de procesamiento de datos de transacciones con Python y Pandas
 
 ## 📌 Objetivo
-Crear un script de Python que procese un archivo de transacción y genere una vista de resumen agregada por:
-- BIN (Número de Identificación Bancaria)
-- Día de la transacción
-- Número de transacciones aprobadas
-- Importe total aprobado
+Este proyecto implementa un script en Python para procesar un archivo de transacciones en formato JSON Lines (.jsonl), aplicar transformaciones y generar un archivo de salida en formato Parquet, optimizado para análisis y almacenamiento eficiente.
 
-La salida se almacena en **formato Parquet**.
+El objetivo principal es demostrar habilidades prácticas en procesamiento de datos, manejo de archivos y buenas prácticas de estructuración de proyectos para ingeniería de datos.
 
----
+##🧠 ¿Qué hace el script?
 
-## 🛠️ Tecnologías utilizadas
-- Python 
-- pandas
-- pyarrow
+Lee un archivo de transacciones en formato .jsonl
+Valida y normaliza la información
+Aplica transformaciones básicas sobre los datos
+Genera un archivo de salida en formato Parquet
 
----
+##📂 Estructura del proyecto
+Proyecto-transacciones/
+│
+├── proyecto_transacciones.py # Script principal
+├── requirements.txt # Dependencias del proyecto
+├── output.parquet # Archivo de salida generado
+└── README.md # Documentación del proyecto
 
-## 📂 Datos de entrada
-El archivo de entrada debe ser un archivo de líneas JSON (`.jsonl`) que contenga los registros de las transacciones.
+##▶️ Cómo ejecutar el proyecto
+1️⃣ Clonar el repositorio
+git clone https://github.com/GeraldyneRozo21/Proyecto-transacciones.git
+cd Proyecto-transacciones
+
+##2️⃣ Instalar dependencias
+pip install -r requirements.txt
+
+##3️⃣ Ejecutar el script
+python proyecto_transacciones.py
+
+##📥 Datos de entrada
+Formato: JSON Lines (.jsonl)
+Cada línea representa una transacción independiente
+
+##📤 Salida
+Archivo generado: output.parquet
+Formato optimizado para análisis y procesamiento posterior
+
+##🛠️ Tecnologías utilizadas
+Python 3
+Pandas
+pyarrow 
+
+##📊 Decisiones técnicas
+Uso de Parquet por su eficiencia en almacenamiento y lectura
+Procesamiento en Python para claridad y mantenibilidad
+Dependencias mínimas para facilitar la ejecución
+
+##👩‍💻 Autora
+Geraldyne Rozo Arias
